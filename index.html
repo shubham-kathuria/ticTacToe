@@ -10,9 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/overlay.css">
-    <link rel="stylesheet" href="/styles/gameConfig.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/overlay.css" />
+    <link rel="stylesheet" href="/styles/gameConfig.css" />
+    <link rel="stylesheet" href="/styles/gameField.css" />
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
@@ -56,25 +57,25 @@
         </ul>
         <button class="btn">Start New Game</button>
       </section>
-      <section id="game-field"></section>
-      <ol>
-        <article>
-          <h3>You won, <span id="winnerName">Player Name</span>!</h3>
+      <section id="game-field">
+        <article id="game-over">
+          <h2>You won, <span id="winnerName">Player Name</span>!</h2>
         </article>
         <p>It's your turn <span id="active-player">Player Name</span>!</p>
-        <li></li>
-        <li></li>
-        <li></li>
+        <ol id="game-board">
+          <li></li>
+          <li></li>
+          <li></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
-      </ol>
-      <div></div>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
     </main>
   </body>
 </html>
