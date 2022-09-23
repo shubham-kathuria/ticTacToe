@@ -11,18 +11,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/overlay.css">
+    <link rel="stylesheet" href="/styles/overlayConfig.css">
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
+    <div id="backdrop"></div>
     <header id="control-header">
       <h1 id="heading">Play Tic, Tac, Toe</h1>
       <p>Built with HTML, CSS, JavaScript and - of course - lot of love!</p>
     </header>
     <main>
-      <div>
+      <div class="overlay-modal" id="overlay-config">
         <h2>Choose your name</h2>
         <form>
-          <div>
+          <div class="form-control">
             <label for="playerName">Player Name</label>
             <input type="text" id="playerName" name="userName" />
           </div>
