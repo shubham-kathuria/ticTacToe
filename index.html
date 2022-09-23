@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
@@ -20,8 +27,8 @@
             <input type="text" id="playerName" name="userName" />
           </div>
           <div>
-            <button type="button">Cancel</button>
-            <button type="submit">Confirm</button>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
       </div>
@@ -32,7 +39,7 @@
               <p>Player 1</p>
               <h2>Player Name</h2>
               <h3>X</h3>
-              <button>Edit</button>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
           <li>
@@ -40,30 +47,30 @@
               <p>Player 2</p>
               <h2>Player Name</h2>
               <h3>O</h3>
-              <button>Edit</button>
+              <button class="btn btn-alt">Edit</button>
             </article>
           </li>
         </ul>
-        <button>Start New Game</button>
+        <button class="btn">Start New Game</button>
       </section>
       <section id="game-field"></section>
-        <ol>
-            <article>
-                <h3>You won, <span id="winnerName">Player Name</span>!</h3>
-            </article>
-            <p>It's your turn <span id="active-player">Player Name</span>!</p>
-            <li></li>
-            <li></li>
-            <li></li>
+      <ol>
+        <article>
+          <h3>You won, <span id="winnerName">Player Name</span>!</h3>
+        </article>
+        <p>It's your turn <span id="active-player">Player Name</span>!</p>
+        <li></li>
+        <li></li>
+        <li></li>
 
-            <li></li>
-            <li></li>
-            <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
 
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
       <div></div>
     </main>
   </body>
