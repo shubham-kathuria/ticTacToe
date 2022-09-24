@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/styles/overlay.css" />
     <link rel="stylesheet" href="/styles/gameConfig.css" />
     <link rel="stylesheet" href="/styles/gameField.css" />
+    <script src="/scripts/config.js" defer></script>
+    <script src="/scripts/game.js" defer></script>
+    <script src="/scripts/app.js" defer></script>
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
@@ -28,10 +31,13 @@
         <form>
           <div class="form-control">
             <label for="playerName">Player Name</label>
-            <input type="text" id="playerName" name="userName" />
+            <input type="text" id="playerName" name="userName" required />
           </div>
+          <p id="input-error"></p>
           <div>
-            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="reset" class="btn btn-alt" id="overlay-cancel-btn">
+              Cancel
+            </button>
             <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
@@ -39,19 +45,31 @@
       <section id="game-config">
         <ul>
           <li>
-            <article>
+            <article id="player-1-data">
               <h2>Player 1</h2>
               <h3>Player Name</h3>
               <p class="symbol">X</p>
-              <button class="btn btn-alt">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player1-btn"
+                data-playerid="1"
+              >
+                Edit
+              </button>
             </article>
           </li>
           <li>
-            <article>
+            <article id="player-2-data">
               <h2>Player 2</h2>
               <h3>Player Name</h3>
               <p class="symbol">O</p>
-              <button class="btn btn-alt">Edit</button>
+              <button
+                class="btn btn-alt"
+                id="edit-player2-btn"
+                data-playerid="2"
+              >
+                Edit
+              </button>
             </article>
           </li>
         </ul>
