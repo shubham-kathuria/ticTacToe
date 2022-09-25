@@ -1,23 +1,31 @@
+let gameData = [
+    [0,0,0], 
+    [0,0,0], 
+    [0,0,0]
+];
+let turn =1;
 let editedPlayer = 0;
 let activePlayer = 0;
 
 const players = [
-    {
-        name: '',
-        Symbol: 'X'
-    },
-    {
-        name: '',
-        Symbol: 'O'
-    },
+  {
+    name: "",
+    Symbol: "X",
+  },
+  {
+    name: "",
+    Symbol: "O",
+  },
 ];
 
 const overlayConfigElement = document.getElementById("overlay-config");
 const backdropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("form");
 const errorElement = document.getElementById("input-error");
-const gameBoardElement = document.getElementById('game-field')
-const activePlayerElement = document.getElementById("active-player")
+const gameBoardElement = document.getElementById("game-field");
+const activePlayerElement = document.getElementById("active-player");
+const gameResultElement = document.getElementById("game-over")
+const winner = document.getElementById("winnerName")
 
 const editPlayer1BtnElement = document.getElementById("edit-player1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player2-btn");
@@ -33,10 +41,10 @@ backdropElement.addEventListener("click", closePlayerConfig);
 
 formElement.addEventListener("submit", confirmPlayerConfig);
 
-startGameBtnElement.addEventListener('click',startNewGame )
+startGameBtnElement.addEventListener("click", startNewGame);
 
 // for(const gameTilesElement of gameTilesElements){
 
 //     gameTilesElement.addEventListener('click',selectGameTile)
 // }
-gameBoardElement.addEventListener('click', selectGameTile)
+gameBoardElement.addEventListener("click", selectGameTile);
